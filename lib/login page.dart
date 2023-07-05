@@ -13,13 +13,14 @@ class loginpage extends StatelessWidget{
         children: [
           Center(child: Padding(
             padding: const EdgeInsets.only(top: 25,left: 55,right: 50),
-            child: Text("loginpage",style: TextStyle(color: Colors.yellow, fontSize: 60),),
+            child: Text("loginpage",style: TextStyle(color: Colors.blue, fontSize: 60),),
 
     ) ),
     Padding(
       padding: const EdgeInsets.only(top: 25,left: 55,right: 50),
       child: TextField(
       decoration: InputDecoration(
+        prefixIcon: Icon(Icons.person ),
           labelText: "Username",
           hintText: "username",
       border:OutlineInputBorder(
@@ -30,7 +31,11 @@ class loginpage extends StatelessWidget{
     Padding(padding: const EdgeInsets.only(top: 25,left: 55,right: 50),
 
     child: TextField(
+      obscureText: true,
+      obscuringCharacter: "*",
       decoration: InputDecoration(
+        prefixIcon: Icon(Icons.password),
+        suffixIcon: Icon(Icons.visibility_off),
         labelText: "password",
         hintText: "password",
         border: OutlineInputBorder(

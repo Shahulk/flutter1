@@ -36,7 +36,7 @@ class Myapp extends StatelessWidget {
               Icon(
                 Icons.account_box_outlined,
                 size: 10,
-                color: Colors.pink,
+                color: Colors.red,
               ),
               Image(image :NetworkImage ("assets/images/apple.png"),height: 100,width: 50,),
                   // image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLOaGyVk-s6W0dd_"
