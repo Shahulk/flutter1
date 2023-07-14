@@ -4,15 +4,17 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: gridview(),
+    debugShowCheckedModeBanner: false,
   ));
 }
+
 
 class gridview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('list app'),
+        title: Text('grid list'),
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
